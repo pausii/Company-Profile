@@ -13,15 +13,11 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
+	<link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .navbar_fixed a{
-        /* color: #11114a !important; */
-      }
-    </style>
   </head>
 
   <body>
@@ -99,9 +95,6 @@
                     <li class="nav-item">
                       <a class="nav-link" href="elements.html">Wilayah Administrasi</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="team/">Team</a>
-                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -152,7 +145,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div data-aos="fade-up" class="col-lg-4 col-md-6 aos-init aos-animate">
             <div class="single_feature">
               <div class="icon"><img src="https://web.balikpapan.go.id/assets/bpnyaman/images/icon-image/service-icon2.png" alt=""></div>
               <div class="desc">
@@ -162,7 +155,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div data-aos="fade-up" data-aos-delay="300" class="col-lg-4 col-md-6 aos-init aos-animate">
             <div class="single_feature">
               <div class="icon"><img src="https://web.balikpapan.go.id/assets/bpnyaman/images/icon-image/service-icon2.png" alt=""></div>
               <div class="desc">
@@ -172,7 +165,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-6 aos-init aos-animate">
             <div class="single_feature">
               <div class="icon"><img src="https://web.balikpapan.go.id/assets/bpnyaman/images/icon-image/service-icon2.png" alt=""></span></div>
               <div class="desc">
@@ -324,8 +317,8 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center d-flex align-items-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+        <div class="row justify-content-center d-flex align-items-center aos-init aos-animate">
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="img/trainer/t2..jpg" alt="" />
             </div>
@@ -340,7 +333,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div data-aos="fade-up" data-aos-delay="200" class="col-lg-3 col-md-6 col-sm-12 single-trainer aos-init aos-animate">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="img/trainer/t1..jpg" alt="" />
             </div>
@@ -355,7 +348,7 @@
             </div>
           </div>
 
-           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+           <div data-aos="fade-up" data-aos-delay="400" class="col-lg-3 col-md-6 col-sm-12 single-trainer aos-init aos-animate">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="img/trainer/t3..jpg" alt="" />
             </div>
@@ -370,7 +363,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-lg-3 col-md-6 col-sm-12 single-trainer aos-init aos-animate">
             <div class="thumb d-flex justify-content-sm-center">
               <img class="img-fluid" src="img/trainer/t4..jpg" alt="" />
             </div>
@@ -459,6 +452,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Phoen
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/aos.js"></script>
     <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/owl-carousel-thumb.min.js"></script>
@@ -468,5 +462,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Phoen
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+	<script>
+  AOS.init();
+</script>
   </body>
 </html>
