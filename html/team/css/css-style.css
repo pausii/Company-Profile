@@ -1,0 +1,58 @@
+body {
+    background: #fff;
+}
+a {
+    text-decoration: none!important;
+}
+
+@media (min-width:980px) and (max-width:1023px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+.sch-title i{
+	color:#c53821;
+}
+/* Tabs*/
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #222;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#sch-tabs {
+    color: #222;
+    height: auto;
+}
+
+#sch-tabs h6.section-title {
+    color: #222;
+}
+
+#sch-tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #222;
+    background-color: transparent;
+    border-color: transparent transparent #222;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sch-tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #222;
+    font-size: 20px;
+}
+#nav-tabContent {
+    margin: 50px 0;
+}
