@@ -38,7 +38,7 @@ h5,
 h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  color: #212b62; }
+  color: #7b8eff; }
 
 .list {
   list-style: none;
@@ -169,7 +169,7 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 14px/80px "Rubik", sans-serif;
         text-transform: capitalize;
-        color: #002347;
+        color: #549fff;
         padding: 0px;
         display: inline-block; }
         @media (max-width: 991px) {
@@ -281,7 +281,7 @@ button:focus {
       color: #fdc632; }
 
 #search_input_box {
-  background: #fdc632;
+  background: #3682f5;
   text-align: center;
   padding: 5px 20px; }
   #search_input_box .form-control {
@@ -329,7 +329,7 @@ button:focus {
   z-index: 1;
   min-height:550px;
   position: relative;
-  background: url(../img/banner/home-banner.jpeg) no-repeat center;
+  background: url(../img/banner/wallpaperflare.com_wallpaper.jpg) no-repeat center;
   background-size: cover; }
   .home_banner_area .banner_inner {
     position: absolute;
@@ -510,7 +510,7 @@ button:focus {
   .single_feature p {
     margin-bottom: 0px; }
   .single_feature:hover {
-    box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1); }
+    box-shadow: 0px 10px 30px rgba(23, 91, 194, 0.295); }
 
 /* End Features Area css
 ============================================================================================ */
@@ -632,7 +632,7 @@ button:focus {
     color: #002347;
     font-weight: 500; }
   .single_course:hover {
-    box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1); }
+    box-shadow: 0px 10px 30px rgba(23, 91, 194, 0.295); }
     .single_course:hover .course_head img {
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
@@ -643,9 +643,9 @@ button:focus {
       background: #fff; }
     .single_course:hover .price {
       background: #002347;
-      color: #fdc632; }
+      color: #3fc4f8; }
     .single_course:hover h4 a {
-      color: #fdc632; }
+      color: #3fc4f8; }
 
 /* End Popular Courses Area css
 ============================================================================================ */
@@ -890,7 +890,7 @@ button:focus {
     .single-trainer .meta-text a {
       font-size: 14px;
       margin: 0 10px;
-      color: #cccccc;
+      color: #000000;
       -webkit-transition: all 0.3s ease 0s;
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
@@ -898,7 +898,7 @@ button:focus {
       .single-trainer .meta-text a:hover {
         color: #fdc632; }
   .single-trainer:hover .meta-text {
-    box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.15); }
+    box-shadow: 0px 10px 30px rgba(23, 91, 194, 0.295); }
 
 /* End Trainers Area css
 ============================================================================================ */
@@ -1017,7 +1017,7 @@ button:focus {
   .testi_item .testi_text p {
     margin-bottom: 0px; }
   .testi_item:hover {
-    box-shadow: 0px 10px 30px 0px rgba(0, 35, 71, 0.1); }
+    box-shadow: 0px 10px 30px 0px rgba(23, 91, 194, 0.295); }
 
 /* End Testimonial Area css
 ============================================================================================ */
@@ -2417,7 +2417,7 @@ h6 {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(23, 91, 194, 0.295);
   cursor: pointer; }
 
 .default-switch input:checked + label {
@@ -2549,7 +2549,7 @@ h6 {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(23, 91, 194, 0.295);
   cursor: pointer; }
 
 .confirm-switch input:checked + label:after {
