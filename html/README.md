@@ -1,2 +1,0 @@
-# Contoh-Template
-Contoh Template

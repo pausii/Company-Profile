@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phoenix Squad</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css-style.css" rel="stylesheet">
+    <link href="css/css-sch-style1.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/css-sch-style2.css" rel="stylesheet" type="text/css">
+    <link href="css/css-sch-style3.css" rel="stylesheet" type="text/css">
+    <link href="css/css-sch-style4.css" rel="stylesheet" type="text/css">
+    <link href="css/css-sch-style5.css" rel="stylesheet" type="text/css">
+    <link href="css/css-sch-style6.css" rel="stylesheet" type="text/css">
+    <link href="css/css-sch-style7.css" rel="stylesheet" type="text/css">
+    <!-- <script type="text/javascript" src="js/3.2.1-jquery.min.js"></script>
+    <script type="text/javascript" src="js/js-bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css">
+    <script src="js/3382-js-owl.carousel.js"></script>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/t/7041646?s=280&v=4" type="image/x-icon">
+    <link rel="stylesheet" href="css/css-magic.min.css">
+    <script src="js/2706-js-main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+        integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-dark" style="background: #222222fc !important;">
+
+    <!-- Tabs -->
+    <section id="sch-tabs" class="bg-dark" style="background: #222222fc !important;">
+        <h6 class="section-title h1 text-light">Phoenix Squad</h6>
+
+        <div class="tab-content py-3 px-3 px-sm-0" id="app">
+            <div class="tab-pane fade active show" id="nav-demo-1" role="tabpanel" aria-labelledby="nav-demo-1-tab">
+
+                <div class="sch-style-dark py-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12" v-for="item in data">
+                                <div class="sch-our-team" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    @click="set_modal(item.nama, item.image, item.quote, item.whatsapp, item.facebook, item.twitter)">
+                                    <div class="sch-images">
+                                        <div class="sch-effect-img"><img :src="item.image"></div>
+                                    </div>
+                                    <div class="sch-info">
+                                        <div class="sch-job">
+                                            <h5>{{item.nama}}</h5>
+                                        </div>
+                                        <!-- <div class="sch-name"></div> -->
+                                        <!-- <div class="sch-description">
+                                            {{item.quote}}
+                                        </div> -->
+                                        <!-- <div class="sch-social">
+                                            <i @click="goto_link(item.whatsapp)" class="fa fa-whatsapp"
+                                                style="color: green;border-color: green;"></i>
+                                            <i @click="goto_link(item.facebook)" class="fa fa-facebook"></i>
+                                            <i @click="goto_link(item.twitter)" class="fa fa-twitter"></i>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+
+                            <!-- Modal -->
+                            <div class="modal animate__animated animate__flipInX" id="exampleModal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered shadow">
+                                    <div class="modal-content">
+                                        <div class="modal-body" style="height: 300px">
+                                            <div class="col-12">
+                                                <div class="row mt-3">
+                                                    <div class="col-6 text-center">
+                                                        <img :src="modal_image" alt="" style="width: 100px"
+                                                            class="rounded-circle">
+                                                        <div class="mt-2">
+                                                            <span style="font-size: 20px;">{{modal_name}}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="text-center">
+                                                            {{modal_quote}}
+                                                        </div>
+                                                        <div class="mt-5 text-center">
+                                                            <div class="sch-social">
+                                                                <i @click="goto_link(modal_whatsapp)"
+                                                                    class="fa fa-whatsapp text-center text-success border-success"></i>
+                                                                <i @click="goto_link(modal_facebook)"
+                                                                    class="fa fa-facebook text-center"></i>
+                                                                <i @click="goto_link(modal_twitter)"
+                                                                    class="fa fa-twitter text-center"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Demo 1 -->
+        </div>
+        <!-- Start Demo 5-->
+
+    </section>
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    data: [],
+                    urls: [
+                        '/json/ahmad-pausi.json',
+                    ],
+                    modal_quote: "",
+                    modal_name: "",
+                    modal_image: "",
+                    modal_whatsapp: "",
+                    modal_twitter: "",
+                    modal_facebook: "",
+                }
+            },
+            methods: {
+                goto_link(url) {
+                    window.location.href = url;
+                },
+                set_modal(nama, image, quote, wa, tw, fb) {
+                    this.modal_name = nama;
+                    this.modal_quote = quote;
+                    this.modal_image = image;
+                    this.modal_whatsapp = wa;
+                    this.modal_twitter = tw;
+                    this.modal_facebook = fb;
+                }
+            },
+            mounted: function () {
+                // console.log(this.urls)
+                this.urls.forEach(url => {
+                    fetch(window.location.href+url)
+                        .then(response => response.json())
+                        .then(json => {
+                            this.data.push(json);
+                            console.log(this.data);
+                        });
+                });
+            }
+        }).mount('#app')
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    640: {
+                        items: 2,
+                        nav: false
+                    },
+                    768: {
+                        items: 3,
+                        nav: false
+                    },
+                    1024: {
+                        items: 4,
+                        nav: true,
+                        loop: false,
+                    }
+                }
+            })
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
