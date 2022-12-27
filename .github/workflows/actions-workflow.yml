@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: build and tag image
-      run: docker build . --file Dockerfile --tag global-institute/company-profile:v1
+      run: docker build . --file Dockerfile --tag sinwrecker/company-profile:v1
     
     - name: push to dockerhub
-      run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_SECRET}} && docker push global-institute/company-profile:v1
+      run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_SECRET}} && docker push sinwrecker/company-profile:v1
