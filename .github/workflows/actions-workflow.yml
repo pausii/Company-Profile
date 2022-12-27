@@ -11,4 +11,4 @@ jobs:
       run: docker build . --file Dockerfile --tag global-institute/company-profile:v1
     
     - name: push to dockerhub
-      run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_SECRET}} docker.io && docker push global-institute/company-profile:v1
+      run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_SECRET}} && docker push global-institute/company-profile:v1
