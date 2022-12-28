@@ -41,7 +41,7 @@
                 <div class="sch-style-dark py-4">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12" v-for="item in data">
+                            <div class="col-md-4 col-sm-6 col-xs-12" v-for="item in data">
                                 <div class="sch-our-team" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                     @click="set_modal(item.nama, item.image, item.quote, item.whatsapp, item.facebook, item.twitter)">
                                     <div class="sch-images">
@@ -51,16 +51,6 @@
                                         <div class="sch-job">
                                             <h5>{{item.nama}}</h5>
                                         </div>
-                                        <!-- <div class="sch-name"></div> -->
-                                        <!-- <div class="sch-description">
-                                            {{item.quote}}
-                                        </div> -->
-                                        <!-- <div class="sch-social">
-                                            <i @click="goto_link(item.whatsapp)" class="fa fa-whatsapp"
-                                                style="color: green;border-color: green;"></i>
-                                            <i @click="goto_link(item.facebook)" class="fa fa-facebook"></i>
-                                            <i @click="goto_link(item.twitter)" class="fa fa-twitter"></i>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +65,7 @@
                                             <div class="col-12">
                                                 <div class="row mt-3">
                                                     <div class="col-6 text-center">
-                                                        <img :src="modal_image" alt="" style="width: 100px"
+                                                        <img :src="modal_image" alt="" style="width: 100px;height: 100px;object-fit: cover;"
                                                             class="rounded-circle">
                                                         <div class="mt-2">
                                                             <span style="font-size: 20px;">{{modal_name}}</span>
@@ -121,15 +111,10 @@
                     data: [],
                     urls: [
                         '/json/ahmad-pausi.json',
-
                         '/json/ArginFiorenza.json',
-
                         '/json/muhammad-raihan.json',
-                        
                         '/json/dimas.json',
-                        
                         '/json/bayu.json',
-
                     ],
                     modal_quote: "",
                     modal_name: "",
